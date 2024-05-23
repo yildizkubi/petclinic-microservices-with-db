@@ -1,4 +1,3 @@
-``` Dockerfile
 FROM openjdk:11-jre
 ARG DOCKERIZE_VERSION=v0.7.0
 ENV SPRING_PROFILES_ACTIVE docker,mysql
