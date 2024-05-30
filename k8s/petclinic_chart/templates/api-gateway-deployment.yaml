@@ -38,7 +38,7 @@ spec:
             - containerPort: 8080
               hostPort: 8080
               protocol: TCP
-     initContainers:
+      initContainers:
         - name: init-discovery-server
           image: busybox
           command: ['sh', '-c', 'until nc -z discovery-server:8761; do echo waiting for discovery-server; sleep 2; done;']
